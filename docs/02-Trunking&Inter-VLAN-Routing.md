@@ -70,8 +70,6 @@ interface GigabitEthernet0/0.30
  ip address 192.168.30.1 255.255.255.0
 exit
 
-end
-write memory
 ```
 
 **PC default gateways:** set PC0/PC1/PC2 gateway to their respective VLAN's router subinterface IP (.10.1, .20.1, .30.1).
