@@ -16,8 +16,8 @@
 
 - [Lab 01 – VLANs & Port Assignment](docs/01-VLANs&PortAssignment.md)
 - [Lab 02 – Trunking & Inter-VLAN Routing](docs/02-Trunking&Inter-VLAN-Routing.md)
-- [Lab 03 – STP Behavior & Loop Troubleshooting](docs/STP-Behavior&Loop-Troubleshooting.md)
-- [Lab 04 – EtherChannel & Link Redundancy](docs/04-etherchannel.md)
+- [Lab 03 – STP Behavior & Loop Troubleshooting](docs/03-STP-Behavior&Loop-Troubleshooting.md)
+- [Lab 04 – EtherChannel & Link Redundancy](docs/04-EtherChannel&Link-Redundancy.md)
 - [Lab 05 – OSPF Single-Area Routing](docs/STP-Behavior&Loop-Troubleshooting.md)
 - [Lab 06 – DHCP & DNS Configuration](docs/06-dhcp-dns.md)
 - [Lab 07 – ACLs (Standard & Extended)](docs/07-acls.md)
