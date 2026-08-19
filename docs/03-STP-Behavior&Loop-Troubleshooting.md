@@ -6,15 +6,15 @@ Demonstrate how Spanning Tree Protocol (STP) prevents Layer 2 loops when redunda
 ## Topology
 
 ```
-                    +----------+           +----------+
-                    | Switch1  |===========| Switch2  |
-                    +----------+  (Link A) +----------+
-                     Fa0/1  Fa0/2            Fa0/1  Fa0/2
-                       |                       |      |
-                     PC0                     PC1    (Link B - redundant,
-                   VLAN 10                 VLAN 10    connects back to Switch1)
-                                                          |
-                                                       Switch1 Fa0/3
+                    +--------------+                 +--------------+
+                    |   Switch1    |=================|    Switch2   |
+                    +--------------+    (Link A)     +--------------+
+          Fa0/3             Fa0/1  Fa0/2       Fa0/1       Fa0/2                  Fa0/3
+            |                 |                              |                      |
+ (Link B - redundant,        PC0                       (Link B - redundant,        PC1
+connects back to Switch1)   VLAN 10                   connects back to Switch1)  VLAN 10
+
+
 ```
 
 **Devices:**
