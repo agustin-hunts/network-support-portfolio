@@ -41,19 +41,16 @@ exit
 interface FastEthernet0/1
  switchport mode access
  switchport access vlan 10
- no shutdown
 exit
 
 interface FastEthernet0/2
  switchport mode access
  switchport access vlan 20
- no shutdown
 exit
 
 interface FastEthernet0/3
  switchport mode access
  switchport access vlan 30
- no shutdown
 exit
 
 ```
