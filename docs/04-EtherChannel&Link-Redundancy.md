@@ -6,13 +6,13 @@ Demonstrate how to bundle multiple physical links between two switches into a si
 ## Topology
 
 ```
-                    +----------+                      +----------+
+                    +----------+                       +----------+
                     | Switch1  |==== Port-channel 1 ===| Switch2  |
-                    +----------+   (Fa0/2 + Fa0/3)      +----------+
-                     Fa0/1    Fa0/2   Fa0/3               Fa0/1  Fa0/2  Fa0/3
-                       |         \_____/                    \____/       |
-                     PC0        (bundled)                 (bundled)    PC1
-                   VLAN 10                                            VLAN 10
+                    +----------+   (Fa0/2 + Fa0/3)     +----------+
+                     Fa0/1    Fa0/2   Fa0/3            Fa0/1  Fa0/2  Fa0/3
+                       |         \_____/                  \____/       |
+                     PC0        (bundled)                (bundled)    PC1
+                   VLAN 10                                           VLAN 10
 ```
 
 **Devices:**
