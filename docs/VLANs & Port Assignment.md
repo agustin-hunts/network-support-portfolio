@@ -12,8 +12,8 @@ Demonstrate the creation of VLANs on a Cisco switch and the assignment of access
                 +-------------------+
                  Fa0/1   Fa0/2   Fa0/3
                    |       |       |
-                 PC0     PC1     PC2
-               (Sales) (IT)    (HR)
+                 PC0      PC1     PC2
+               (Sales)   (IT)    (HR)
 ```
 
 **Devices:**
