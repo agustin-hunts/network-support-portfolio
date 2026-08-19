@@ -43,8 +43,7 @@ exit
 spanning-tree mode pvst
 spanning-tree vlan 10 priority 4096
 
-end
-write memory
+
 ```
 *(Priority 4096 set on Switch1 to force it as the root bridge for VLAN 10 — lower priority wins root election.)*
 
