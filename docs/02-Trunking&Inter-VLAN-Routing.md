@@ -42,11 +42,8 @@ configure terminal
 interface GigabitEthernet0/1
  switchport mode trunk
  switchport trunk allowed vlan 10,20,30
- no shutdown
 exit
 
-end
-write memory
 ```
 
 **Router0 (router-on-a-stick — subinterfaces):**
