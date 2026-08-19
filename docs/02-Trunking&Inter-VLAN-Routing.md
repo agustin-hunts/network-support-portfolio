@@ -16,9 +16,9 @@ Demonstrate how to carry multiple VLANs across a single switch-to-router (or swi
                     +----------+
                  Fa0/1   Fa0/2   Fa0/3
                    |       |       |
-                 PC0     PC1     PC2
+                 PC0      PC1     PC2
               VLAN 10   VLAN 20  VLAN 30
-              (Sales)   (IT)     (HR)
+              (Sales)    (IT)     (HR)
 ```
 
 **Devices:**
