@@ -56,8 +56,6 @@ interface FastEthernet0/3
  no shutdown
 exit
 
-end
-write memory
 ```
 
 ## Verification
