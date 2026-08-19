@@ -14,7 +14,7 @@
 
 ## 📌 Table of Contents
 
-- [Lab 01 – VLANs & Port Assignment](docs/01-vlans.md)
+- [Lab 01 – VLANs & Port Assignment](docs/VLANs&PortAssignment.md)
 - [Lab 02 – Trunking & Inter-VLAN Routing](docs/02-trunking-intervlan.md)
 - [Lab 03 – STP Behavior & Loop Troubleshooting](docs/03-stp-troubleshooting.md)
 - [Lab 04 – EtherChannel & Link Redundancy](docs/04-etherchannel.md)
