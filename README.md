@@ -1,6 +1,6 @@
 # 🌐 CCNA Packet Tracer Lab Series
 
-[![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-8.2-blue?logo=cisco)](#)
+[![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-8.2.1.0118-blue?logo=cisco)](#)
 [![Status](https://img.shields.io/badge/Status-In%20Progress-brightgreen)](#)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](#)
 [![Platform](https://img.shields.io/badge/Platform-Packet%20Tracer-orange)](#)
