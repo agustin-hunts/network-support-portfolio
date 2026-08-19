@@ -42,8 +42,6 @@ interface Port-channel1
  switchport trunk allowed vlan 10
 exit
 
-end
-write memory
 ```
 
 **Switch2:**
@@ -62,8 +60,6 @@ interface Port-channel1
  switchport trunk allowed vlan 10
 exit
 
-end
-write memory
 ```
 *(`channel-group 1 mode active` on both sides enables LACP — both ends negotiate actively, as opposed to `passive` mode which only responds.)*
 
