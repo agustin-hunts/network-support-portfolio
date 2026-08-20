@@ -19,8 +19,8 @@ Demonstrate how to bundle multiple physical links between two switches into a si
 | Device  | Interface       | Connects To         | Role                        |
 |---------|------------------|----------------------|------------------------------|
 | Switch1 | Fa0/1            | PC0                  | Access port, VLAN 10        |
-| Switch1 | Fa0/2, Fa0/3     | Switch2 Fa0/2, Fa0/3 | Port-channel 1 members (LACP) |
-| Switch2 | Fa0/1            | PC1                  | Access port, VLAN 10        |
+| Switch1 | Fa0/2, Fa0/3     | Switch2 Fa0/1, Fa0/2 | Port-channel 1 members (LACP) |
+| Switch2 | Fa0/3            | PC1                  | Access port, VLAN 10        |
 
 Both physical links between Switch1 and Switch2 are bundled into **Port-channel 1**, so they act as a single logical trunk — no STP blocking needed, and traffic load-balances across both.
 
@@ -49,7 +49,7 @@ exit
 enable
 configure terminal
 
-interface range FastEthernet0/2 - 3
+interface range FastEthernet0/1 - 2
  switchport mode trunk
  switchport trunk allowed vlan 10
  channel-group 1 mode active
