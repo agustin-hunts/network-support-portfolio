@@ -18,7 +18,7 @@
 - [Lab 02 – Trunking & Inter-VLAN Routing](docs/02-Trunking&Inter-VLAN-Routing.md)
 - [Lab 03 – STP Behavior & Loop Troubleshooting](docs/03-STP-Behavior&Loop-Troubleshooting.md)
 - [Lab 04 – EtherChannel & Link Redundancy](docs/04-EtherChannel&Link-Redundancy.md)
-- [Lab 05 – OSPF Single-Area Routing](docs/STP-Behavior&Loop-Troubleshooting.md)
+- [Lab 05 – OSPF Single-Area Routing](docs/05-OSPFSingle-AreaRouting.md)
 - [Lab 06 – DHCP & DNS Configuration](docs/06-dhcp-dns.md)
 - [Lab 07 – ACLs (Standard & Extended)](docs/07-acls.md)
 - [Lab 08 – NAT (Static & PAT)](docs/08-nat.md)
