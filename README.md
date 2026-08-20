@@ -31,7 +31,7 @@
 
 | Field           | Details                          |
 |-----------------|-----------------------------------|
-| Simulator       | Cisco Packet Tracer 8.2           |
+| Simulator       | Cisco Packet Tracer 8.2.1.0118    |
 | Focus Areas     | Switching, Routing, Services, Security |
 | Device OS       | Cisco IOS                         |
 | Difficulty      | Beginner – Intermediate           |
