@@ -39,7 +39,7 @@ interface GigabitEthernet0/0
  no shutdown
 exit
 
-interface GigabitEthernet0/1.10
+interface GigabitEthernet0/1
  ip address 192.168.10.1 255.255.255.0
  no shutdown
 exit
