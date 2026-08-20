@@ -8,7 +8,7 @@ Demonstrate dynamic routing between multiple routers using OSPF (Open Shortest P
 ```
         192.168.1.0/30                192.168.2.0/30
    R1 ----------------------- R2 ---------------------- R3
-   Gi0/0                 Gi0/0  Gi0/1                Gi0/1
+   Gi0/1                 Gi0/0  Gi0/1                Gi0/1
    |                                                  |
 LAN: 192.168.10.0/24                          LAN: 192.168.30.0/24
    |                                                  |
@@ -18,8 +18,8 @@ LAN: 192.168.10.0/24                          LAN: 192.168.30.0/24
 **Devices:**
 | Device | Interface | IP Address         | Network            |
 |--------|-----------|----------------------|----------------------|
-| R1     | Gi0/0     | 192.168.10.1/24      | LAN (PC0)           |
-| R1     | Gi0/1     | 192.168.1.1/30       | Link to R2          |
+| R1     | Gi0/0     | 192.168.1.1/30       | Link to R2          |
+| R1     | Gi0/1     | 192.168.10.1/24      | LAN (PC0)           |
 | R2     | Gi0/0     | 192.168.1.2/30       | Link to R1          |
 | R2     | Gi0/1     | 192.168.2.1/30       | Link to R3          |
 | R3     | Gi0/0     | 192.168.2.2/30       | Link to R2          |
@@ -35,12 +35,12 @@ enable
 configure terminal
 
 interface GigabitEthernet0/0
- ip address 192.168.10.1 255.255.255.0
+ ip address 192.168.1.1 255.255.255.252
  no shutdown
 exit
 
 interface GigabitEthernet0/1
- ip address 192.168.1.1 255.255.255.252
+ ip address 192.168.10.1 255.255.255.0
  no shutdown
 exit
 
