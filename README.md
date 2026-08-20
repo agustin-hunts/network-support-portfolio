@@ -22,8 +22,8 @@
 - [Lab 06 – DHCP & DNS Configuration](docs/06-DHCP-DNS-Configuration.md)
 - [Lab 07 – ACLs (Standard & Extended)](docs/07-ACLs(Standard&Extended).md)
 - [Lab 08 – NAT (Static & PAT)](docs/08-NAT(Static&PAT).md)
-- [Lab 09 – Basic WLAN Setup](docs/09-wlan.md)
-- [Lab 10 – Port Security & Hardening](docs/10-port-security.md)
+- [Lab 09 – Basic WLAN Setup](docs/09-Basic-WLAN-Setup.md)
+- [Lab 10 – Port Security & Hardening](docs/10-Port-Security&Hardening.md)
 
 ---
 
