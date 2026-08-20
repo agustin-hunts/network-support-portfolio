@@ -49,8 +49,6 @@ router ospf 1
  network 192.168.1.0 0.0.0.3 area 0
 exit
 
-end
-write memory
 ```
 
 **R2:**
@@ -73,8 +71,6 @@ router ospf 1
  network 192.168.2.0 0.0.0.3 area 0
 exit
 
-end
-write memory
 ```
 
 **R3:**
@@ -97,8 +93,6 @@ router ospf 1
  network 192.168.30.0 0.0.0.255 area 0
 exit
 
-end
-write memory
 ```
 
 ## Verification
