@@ -69,13 +69,6 @@ Each lab in `docs/` follows the same structure:
 
 ---
 
-## 🛠️ Tools Used
-
-- Cisco Packet Tracer
-- draw.io (topology diagrams)
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.
