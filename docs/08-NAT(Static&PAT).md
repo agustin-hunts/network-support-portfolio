@@ -6,13 +6,13 @@ Demonstrate how Network Address Translation allows private internal IP addresses
 ## Topology
 
 ```
-LAN: 192.168.10.0/24                 ISP Cloud
-   |                                     |
-  PC0 (.10.10)                    ISP Router
-  PC1 (.10.11)                    (203.0.113.1)
-Server0 (.10.50) ---- R1 (NAT router) ----+
-                    Gi0/0 (inside)   Gi0/1 (outside)
-                    192.168.10.1     203.0.113.10/30
+                     LAN: 192.168.10.0/24                 ISP Cloud
+                            |                                 |
+                         PC0 (.10.10)                    ISP Router
+                         PC1 (.10.11)                    (203.0.113.1)
+                     Server0 (.10.50) ---- R1 (NAT router) ----+
+                                Gi0/0 (inside)   Gi0/1 (outside)
+                                192.168.10.1     203.0.113.10/30
 ```
 
 **Devices:**
