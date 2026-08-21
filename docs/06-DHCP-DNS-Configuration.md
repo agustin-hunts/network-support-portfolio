@@ -6,9 +6,9 @@ Demonstrate how to configure a Cisco router as a DHCP server to automatically as
 ## Topology
 
 ```
-        192.168.1.0/30
-   R1 -------------------- R2
-   Gi0/0                Gi0/1  Gi0/0
+              192.168.1.0/30
+   R1 ----------------------------- R2
+ Gi0/1         Gi0/0---Gi0/0        Gi0/1
    |                                  |
 LAN: 192.168.10.0/24         LAN: 192.168.20.0/24
 (DHCP Pool: .10-.100)        (DHCP Pool: .10-.100)
@@ -20,8 +20,8 @@ LAN: 192.168.10.0/24         LAN: 192.168.20.0/24
 **Devices:**
 | Device | Interface | IP Address        | Role                          |
 |--------|-----------|---------------------|--------------------------------|
-| R1     | Gi0/0     | 192.168.10.1/24     | Gateway + DHCP server, VLAN A |
-| R1     | Gi0/1     | 192.168.1.1/30      | Link to R2                    |
+| R1     | Gi0/1     | 192.168.10.1/24     | Gateway + DHCP server, VLAN A |
+| R1     | Gi0/0     | 192.168.1.1/30      | Link to R2                    |
 | R2     | Gi0/0     | 192.168.1.2/30      | Link to R1                    |
 | R2     | Gi0/1     | 192.168.20.1/24     | Gateway + DHCP server, VLAN B |
 | PC0    | —         | DHCP (auto)         | Client on R1's LAN            |
