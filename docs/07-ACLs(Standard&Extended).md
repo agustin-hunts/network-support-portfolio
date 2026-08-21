@@ -12,8 +12,7 @@ Demonstrate how to control traffic flow between networks using Access Control Li
              |                                   |
     LAN A: 192.168.10.0/24           LAN B: 192.168.20.0/24
              |                                   |
-        PC0 (.10.10)                      PC1 (.20.10)  
-                                   Server0 (.20.50) - Web/FTP
+        PC0 (.10.10)                    Server0 (.20.50) - Web/FTP------PC1 (.20.10)  
 ```
 
 **Scenario:**
