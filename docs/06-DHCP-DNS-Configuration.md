@@ -43,8 +43,6 @@ ip dhcp pool LAN-R1
  lease 7
 exit
 
-end
-write memory
 ```
 
 **R2 (DHCP pool for its own LAN):**
@@ -61,8 +59,6 @@ ip dhcp pool LAN-R2
  lease 7
 exit
 
-end
-write memory
 ```
 
 *(`excluded-address` reserves .1–.9 for static devices like router interfaces/servers so DHCP never hands them out. `dns-server` points clients to an upstream DNS resolver — in this lab, a simulated DNS server or 8.8.8.8 stand-in.)*
