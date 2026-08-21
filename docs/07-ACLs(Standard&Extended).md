@@ -82,7 +82,7 @@ Extended IP access list 110
 ```
 
 **Test results:**
-- PC0 → Server0 web browser (http://192.168.20.50) — **succeeds** (port 80 explicitly permitted)
+- PC0 → Server0 web browser (http ://192.168.20.50) — **succeeds** (port 80 explicitly permitted)
 - PC0 → Server0 FTP client — **fails / times out** (port 21 explicitly denied)
 - PC0 → PC1 ping (192.168.20.10) — **fails** (blocked by standard ACL 10 on R2, since PC1 isn't the web server and standard ACL blocks PC0 entirely from LAN B in this test variant)
 
