@@ -6,13 +6,13 @@ Demonstrate how to control traffic flow between networks using Access Control Li
 ## Topology
 
 ```
-        192.168.1.0/30
-   R1 -------------------- R2
-   Gi0/1                Gi0/0  Gi0/1
-   |                                  |
-LAN A: 192.168.10.0/24        LAN B: 192.168.20.0/24
-   |                                  |
-  PC0 (.10.10)              PC1 (.20.10)   Server0 (.20.50) - Web/FTP
+              192.168.1.0/30
+   R1 -------------------------------- R2
+ Gi0/1         Gi0/0---Gi0/0        Gi0/1
+   |                                   |
+LAN A: 192.168.10.0/24         LAN B: 192.168.20.0/24
+   |                                   |
+  PC0 (.10.10)                   PC1 (.20.10)   Server0 (.20.50) - Web/FTP
 ```
 
 **Scenario:**
@@ -35,8 +35,6 @@ interface GigabitEthernet0/1
  ip access-group 10 out
 exit
 
-end
-write memory
 ```
 
 *(Standard ACLs only filter by source IP, so they should be placed as close to the destination as possible — otherwise they'd block PC0 from reaching networks it should still be allowed to access.)*
@@ -56,8 +54,6 @@ interface GigabitEthernet0/0
  ip access-group 110 in
 exit
 
-end
-write memory
 ```
 
 *(Extended ACLs can match source, destination, protocol, and port — so they should sit close to the source to avoid wasting bandwidth carrying traffic across the network only to drop it later.)*
