@@ -40,7 +40,6 @@ ip dhcp pool LAN-R1
  network 192.168.10.0 255.255.255.0
  default-router 192.168.10.1
  dns-server 8.8.8.8
- lease 7
 exit
 
 ```
@@ -56,7 +55,6 @@ ip dhcp pool LAN-R2
  network 192.168.20.0 255.255.255.0
  default-router 192.168.20.1
  dns-server 8.8.8.8
- lease 7
 exit
 
 ```
