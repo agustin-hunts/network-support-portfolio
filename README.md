@@ -44,13 +44,19 @@
 ```
 packet-tracer-lab-series/
 ├── docs/
-│   ├── 01-vlans.md
-│   ├── 02-trunking-intervlan.md
-│   ├── 03-stp-troubleshooting.md
-│   └── ...
+│   ├── 01-VLANs&PortAssignment.md
+│   ├── 02-Trunking&Inter-VLAN-Routing.md
+│   ├── 03-STP-Behavior&Loop-Troubleshooting.md
+│   ├── 04-EtherChannel&Link-Redundancy.md
+│   ├── 05-OSPFSingle-AreaRouting.md
+│   ├── 06-DHCP-DNS-Configuration.md
+│   ├── 07-ACLs(Standard&Extended).md
+│   ├── 08-NAT(Static&PAT).md
+│   ├── 09-Basic-WLAN-Setup.md
+│   └── 10-Port-Security&Hardening.md
 ├── screenshots/
 │   └── (topology diagrams & verification output per lab)
-├── configs/
+├── Cisco Packer Tracer/
 │   └── (device configuration files per lab)
 ├── LICENSE
 └── README.md
