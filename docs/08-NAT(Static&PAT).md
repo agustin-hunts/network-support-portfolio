@@ -58,8 +58,6 @@ access-list 1 permit 192.168.10.0 0.0.0.255
 
 ip nat inside source list 1 interface GigabitEthernet0/1 overload
 
-end
-write memory
 ```
 
 *(The ACL defines which internal addresses are allowed to be translated; `overload` enables PAT so multiple hosts share the single outside IP, differentiated by port number.)*
