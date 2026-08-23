@@ -39,8 +39,6 @@ interface FastEthernet0/1
  switchport port-security violation shutdown
 exit
 
-end
-write memory
 ```
 
 *(`sticky` dynamically learns PC0's MAC address the first time it connects and locks it permanently into the running config. `violation shutdown` puts the port into err-disabled state if any other MAC address tries to connect — the strictest response, versus `restrict` which just drops traffic and logs it, or `protect` which drops silently.)*
@@ -71,8 +69,7 @@ exit
 
 service password-encryption
 
-end
-write memory
+
 ```
 
 *(`transport input ssh` disables Telnet on the VTY lines entirely — only SSH connections are accepted. `service password-encryption` ensures passwords aren't stored in plaintext in the config.)*
