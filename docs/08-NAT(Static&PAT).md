@@ -69,8 +69,7 @@ R1# show ip nat translations
 
 Pro  Inside global        Inside local         Outside local     Outside global
 ---  203.0.113.50          192.168.10.50         ---               ---
-tcp  203.0.113.10:1025     192.168.10.10:1025    203.0.113.1:80    203.0.113.1:80
-tcp  203.0.113.10:1026     192.168.10.11:1026    203.0.113.1:80    203.0.113.1:80
+
 ```
 
 - Server0's static entry is always present, even with no active traffic — permanent mapping
@@ -79,7 +78,7 @@ tcp  203.0.113.10:1026     192.168.10.11:1026    203.0.113.1:80    203.0.113.1:8
 ```
 R1# show ip nat statistics
 
-Total active translations: 3 (1 static, 2 dynamic; 2 extended)
+Total active translations: 3 (1 static, 0 dynamic; 0 extended)
 Outside interfaces: GigabitEthernet0/1
 Inside interfaces: GigabitEthernet0/0
 ```
